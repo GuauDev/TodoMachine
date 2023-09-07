@@ -35,7 +35,7 @@ function useLocalStorage(itemName, initialValue) {
             }
 
         }, 2000);
-
+        // eslint-disable-next-line
     }, [])
     const saveItem = (newItem) => {
         localStorage.setItem(itemName, JSON.stringify(newItem))

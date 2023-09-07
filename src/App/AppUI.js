@@ -9,6 +9,8 @@ import { TodosError } from '../TodosError';
 import { TodoContext } from '../TodoContext';
 import { EmptyTodos } from '../EmptyTodos';
 import { Modal } from '../Modal';
+import { DeleteAllTodos } from '../DeleteAllTodos';
+
 import React from 'react';
 function AppUI(/*{
     error,
@@ -29,7 +31,7 @@ function AppUI(/*{
         completeTodo,
         deleteTodo,
         openModal,
-        setOpenModal
+
 
     } = React.useContext(TodoContext)
 
@@ -38,7 +40,7 @@ function AppUI(/*{
         <>
             <TodoCounter />
             <TodoSearch />
-
+            <DeleteAllTodos />
             <TodoList>
                 {loading && (
                     <>

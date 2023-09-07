@@ -9,6 +9,7 @@ function TodoProvider({ children }) {
     const [searchValue, setSearchValue] = React.useState("")
     const [openModal, setOpenModal] = React.useState(false)
 
+
     const completedTodos = todos.filter((todo) => todo.completed).length
     const totalTodos = todos.length
 
@@ -40,6 +41,10 @@ function TodoProvider({ children }) {
         newTodos.splice(todoIndex, 1)
         saveTodos(newTodos)
     }
+
+    const deleteTodos = () => {
+        saveTodos([])
+    }
     return (
         <TodoContext.Provider value={{
             error,
@@ -53,7 +58,8 @@ function TodoProvider({ children }) {
             deleteTodo,
             openModal,
             setOpenModal,
-            addTodo
+            addTodo,
+            deleteTodos
         }}>
             {children}
         </TodoContext.Provider>
