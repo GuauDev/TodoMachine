@@ -22,3 +22,11 @@
 .TodoSearch:focus {
   outline-color: #61DAFA;
 }
+
+@media (width <= 300px) {
+  .TodoSearch{
+    width: 250px;
+    height: 60px;
+    margin: 0 12px;
+  }
+}

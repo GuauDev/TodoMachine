@@ -27,6 +27,9 @@ body{
 *{
     font-family:montserrat,Arial,Helvetica,sans-serif;
     font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 #root{
     margin:0 24px;
@@ -36,4 +39,11 @@ body{
     flex-direction: column;
     position:relative;
     min-height:100vh
+}
+
+@media (width <= 300px) {
+    #root{
+        margin: 0;
+    }
+
 }

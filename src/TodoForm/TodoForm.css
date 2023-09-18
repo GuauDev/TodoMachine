@@ -14,8 +14,8 @@ form{
 form textarea{
     padding: 20px;
     display: flex;
-    width: 207px;
-    height: 72px;
+    width: 247px;
+    height: 112px;
     flex-direction: column;
     justify-content: center;
     border-radius: 2px;
@@ -85,4 +85,14 @@ form label {
     border-radius: 2px;
     background: #61DAFA;
     box-shadow: 0px 5px 25px 0px rgba(97, 218, 250, 0.50);
+}
+
+@media (width <= 300px) {
+    form{
+        width: 270px;
+        height: 300px;   
+    }
+    form textarea{
+        width: 230px;
+    }
 }
