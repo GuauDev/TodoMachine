@@ -43,11 +43,19 @@
 .TodosLoading,
 .TodosLoading-check,
 .TodosLoading-close {
-  background: linear-gradient(90deg, rgba(250,250,250,1), rgb(200, 199, 199));
-  background-size: 400% 400%;
-  animation: loadingAnimation 3s ease-in-out infinite;
+    background: linear-gradient(90deg, rgba(250,250,250,1), rgb(200, 199, 199));
+    background-size: 400% 400%;
+    animation: loadingAnimation 3s ease-in-out infinite;
 }
 
+@media (width <= 300px) {
+    .TodosLoading{
+        width: 270px;
+        gap: 18px;
+        padding: 12px;
+    }
+
+}
 
 
 @keyframes loadingAnimation {

@@ -17,12 +17,18 @@
     src: url(./fonts/Montserrat-Medium.ttf);
     font-weight: medium;
 }
-body{
+html, body{
     margin:0;
     padding:0;
     background:#f2f4f5;
     color:#1e1e1f;
-    
+
+
+    /* max-height: 400px !important; 
+    height: 400px !important;
+    max-width: 300px !important;
+    width: 300px !important;     */
+    /* Discoment this when you are building extension */
 }
 *{
     font-family:montserrat,Arial,Helvetica,sans-serif;
@@ -38,12 +44,28 @@ body{
     justify-content: center;
     flex-direction: column;
     position:relative;
-    min-height:100vh
+
+    /* max-height: 400px !important; 
+    overflow-y:scroll ;
+    height: 400px !important;
+    max-width: 300px !important;
+    width: 300px !important;   */
+    /*Discoment this when you are building extension*/
+
+
+    
 }
 
-@media (width <= 300px) {
+#root::-webkit-scrollbar-thumb{
+    width: 5px; 
+    background-color: gray;
+
+}
+
+
+
+@media (width <=300px) {
     #root{
         margin: 0;
     }
-
 }
